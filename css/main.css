@@ -1,0 +1,122 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2eae2;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #6c7289;
+}
+
+.btn {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  gap: 1rem;
+  transition: background-color 0.2s ease-in;
+  border-radius: 10px;
+}
+.btn:link, .btn:visited {
+  background-color: #3d8168;
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+}
+.btn:hover, .btn:active {
+  background-color: #1a4032;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 34.3rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media only screen and (min-width: 39.375em) {
+  .card__image-box {
+    flex: 1 0 50%;
+  }
+}
+.card__image img {
+  width: 100%;
+}
+@media only screen and (min-width: 39.375em) {
+  .card__image img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.card__details {
+  padding: 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media only screen and (min-width: 39.375em) {
+  .card__details {
+    flex: 1 0 50%;
+    justify-content: center;
+  }
+}
+.card__category {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.card__name {
+  color: #1c232b;
+  font-family: "Fraunces", sans-serif;
+  font-size: 3.2rem;
+  line-height: 32px;
+}
+.card__summary {
+  font-size: 1.4rem;
+  line-height: 23px;
+  font-weight: 500;
+}
+.card__price {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.card__current-price {
+  color: #3d8168;
+  font-family: "Fraunces", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.card__old-price {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+@media only screen and (min-width: 39.375em) {
+  .card {
+    flex-direction: row;
+    max-width: 60rem;
+  }
+}/*# sourceMappingURL=main.css.map */

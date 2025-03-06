@@ -1,0 +1,26 @@
+@use "../abstracts" as a;
+
+.btn {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  gap: 1rem;
+  transition: background-color 0.2s ease-in;
+  border-radius: 10px;
+
+  &:link,
+  &:visited {
+    background-color: a.$color-green-1;
+    color: a.$color-white;
+    padding: 1.5rem 2rem;
+  }
+
+  &:hover,
+  &:active {
+    background-color: a.$color-green-2;
+  }
+}
